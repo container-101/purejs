@@ -33,6 +33,7 @@ module.exports = {
   },
   // HthmlWebpackPlugin: generate index.html which is including bundle.js using template
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     new MiniCssExtractPlugin({ filename: 'app.css' }),
   ],
